@@ -1,7 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f43ca032-c860-4d81-b28e-ca2bfadf2104" name="Default Changelist" comment="" />
+    <list default="true" id="f43ca032-c860-4d81-b28e-ca2bfadf2104" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/air_monitoring.html" beforeDir="false" afterPath="$PROJECT_DIR$/air_monitoring.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-single.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog-single.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/borewell_monitoring.html" beforeDir="false" afterPath="$PROJECT_DIR$/borewell_monitoring.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dg_monitoring.html" beforeDir="false" afterPath="$PROJECT_DIR$/dg_monitoring.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce-cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-cart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce-single.html" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-single.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce.html" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/energy_monitoring.html" beforeDir="false" afterPath="$PROJECT_DIR$/energy_monitoring.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/faq.html" beforeDir="false" afterPath="$PROJECT_DIR$/faq.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateways.html" beforeDir="false" afterPath="$PROJECT_DIR$/gateways.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/industrial_monitoring.html" beforeDir="false" afterPath="$PROJECT_DIR$/industrial_monitoring.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/meters.html" beforeDir="false" afterPath="$PROJECT_DIR$/meters.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/search-results.html" beforeDir="false" afterPath="$PROJECT_DIR$/search-results.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sensors.html" beforeDir="false" afterPath="$PROJECT_DIR$/sensors.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services.html" beforeDir="false" afterPath="$PROJECT_DIR$/services.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/team-single.html" beforeDir="false" afterPath="$PROJECT_DIR$/team-single.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/timeline.html" beforeDir="false" afterPath="$PROJECT_DIR$/timeline.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,7 +57,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1668659720593</updated>
-      <workItem from="1668659722736" duration="279000" />
+      <workItem from="1668659722736" duration="760000" />
+      <workItem from="1668860725494" duration="683000" />
     </task>
     <servers />
   </component>
