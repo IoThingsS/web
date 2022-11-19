@@ -2678,7 +2678,7 @@ a.actionbg2.btn:hover, a.actionbg3.btn:hover {
     left: 0;
     right: 0;
     bottom: 0;
-    top: 124px;
+    top: 175px;
     z-index: 9999; }
   .w3l-header-4 nav ul ul::-webkit-scrollbar, .w3l-header-4 .header-4 ul.menu::-webkit-scrollbar {
     width: 4px; }
@@ -2809,7 +2809,7 @@ a.actionbg2.btn:hover, a.actionbg3.btn:hover {
 
 @media (max-width: 440px) {
   .w3l-header-4 [id^=drop]:checked + ul {
-    top: 123px; } }
+    top: 223px; } }
 
 @media (max-width: 320px) {
   .w3l-header-4 a.brand-logo {
@@ -2826,13 +2826,13 @@ a.actionbg2.btn:hover, a.actionbg3.btn:hover {
   .w3l-header-4 .toggle {
     margin-top: 2px; }
   .w3l-header-4 [id^=drop]:checked + ul {
-    top: 114px; } }
+    top: 223px; } }
 
 @media (max-width: 320px) {
   .w3l-header-4 a.brand-logo {
     font-size: 25px; }
   .w3l-header-4 [id^=drop]:checked + ul {
-    top: 113px; } }
+    top: 223px; } }
 
 @media (max-width: 992px) {
   .w3l-header-4 {
@@ -7434,3 +7434,26 @@ Side note: I know that this style of nesting in SASS doesn't result in the most 
   width: 40px;
   height: 40px
 }
+@media (max-width: 425px) {
+  .col-4{
+    flex: 0 0 100% !important;
+    max-width: 100%;
+  }
+}
+.grids-feature-modified{
+  border: 1px solid #EBEBEF;
+  padding: 40px 30px;
+  background: #020d26;
+}
+.grids-feature-modified span.fa {
+  font-size: 36px;
+  color: var(--btn-color);
+}
+.grids-feature-modified  p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(187, 198, 221, 0.95);
+}
+
