@@ -2836,7 +2836,7 @@ a.actionbg2.btn:hover, a.actionbg3.btn:hover {
 
 @media (max-width: 992px) {
   .w3l-header-4 {
-    top: 56px; } }
+    top: 70px; } }
 
 @media (max-width: 668px) {
   .w3l-header-4 {
@@ -2844,11 +2844,11 @@ a.actionbg2.btn:hover, a.actionbg3.btn:hover {
 
 @media (max-width: 500px) {
   .w3l-header-4 {
-    top: 56px; } }
+    top: 120px; } }
 
 @media (max-width: 387px) {
   .w3l-header-4 {
-    top: 56px; } }
+    top: 128px; } }
 
 .w3l-hero-headers-14 {
   /*-- Heroheader14 block --*/
