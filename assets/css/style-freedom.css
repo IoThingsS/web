@@ -83,7 +83,8 @@ select {
   cursor: pointer; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none !important;
+}
 
 a:hover, .btn:hover, button:hover {
   transition: 0.3s all;
