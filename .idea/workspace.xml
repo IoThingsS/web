@@ -2,10 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f43ca032-c860-4d81-b28e-ca2bfadf2104" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/iot-platform-features.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/style-freedom.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style-freedom.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/air_monitoring.html" beforeDir="false" afterPath="$PROJECT_DIR$/air_monitoring.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/borewell_monitoring.html" beforeDir="false" afterPath="$PROJECT_DIR$/borewell_monitoring.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dg_monitoring.html" beforeDir="false" afterPath="$PROJECT_DIR$/dg_monitoring.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/energy_monitoring.html" beforeDir="false" afterPath="$PROJECT_DIR$/energy_monitoring.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gateways.html" beforeDir="false" afterPath="$PROJECT_DIR$/gateways.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/industrial_monitoring.html" beforeDir="false" afterPath="$PROJECT_DIR$/industrial_monitoring.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iot-platform-features.html" beforeDir="false" afterPath="$PROJECT_DIR$/iot-platform-features.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/meters.html" beforeDir="false" afterPath="$PROJECT_DIR$/meters.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sensors.html" beforeDir="false" afterPath="$PROJECT_DIR$/sensors.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +65,7 @@
       <workItem from="1669015610272" duration="394000" />
       <workItem from="1669034153674" duration="1480000" />
       <workItem from="1669220357652" duration="52000" />
-      <workItem from="1669220422683" duration="3159000" />
+      <workItem from="1669220422683" duration="3429000" />
     </task>
     <servers />
   </component>
