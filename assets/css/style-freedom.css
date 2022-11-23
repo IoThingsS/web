@@ -18,7 +18,7 @@ html {
 * {
   box-sizing: border-box; }
 
-.wrapper {
+.wrapper,.wrapper2{
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
@@ -39,7 +39,9 @@ html {
 
 @media (min-width: 1200px) {
   .wrapper {
-    max-width: 1140px; } }
+    max-width: 1140px; }
+  .wrapper2 {
+    max-width: 1300px; } }
 
 .wrapper-full {
   width: 100%;
