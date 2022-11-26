@@ -5162,12 +5162,13 @@ a.actionbg3.btn:hover {
   text-align: center;
 }
 .w3l-covers-9-main .covers-9 {
-  background: url(../images/bg_tech.jpg) no-repeat center;
+  background: url(../images/bg_tech_dark.jpg) no-repeat center;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   -ms-background-size: cover;
+  /* opacity: 1; */
   background-attachment: fixed;
   padding: 80px 0;
 }
