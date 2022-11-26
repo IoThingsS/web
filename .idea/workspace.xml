@@ -2,18 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f43ca032-c860-4d81-b28e-ca2bfadf2104" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/air_case_study.html" beforeDir="false" afterPath="$PROJECT_DIR$/air_case_study.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/air_monitoring.html" beforeDir="false" afterPath="$PROJECT_DIR$/air_monitoring.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/borewell_monitoring.html" beforeDir="false" afterPath="$PROJECT_DIR$/borewell_monitoring.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dg_case_study.html" beforeDir="false" afterPath="$PROJECT_DIR$/dg_case_study.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dg_monitoring.html" beforeDir="false" afterPath="$PROJECT_DIR$/dg_monitoring.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dmc_tipper_case_study.html" beforeDir="false" afterPath="$PROJECT_DIR$/dmc_tipper_case_study.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce.html" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/energy_case_study.html" beforeDir="false" afterPath="$PROJECT_DIR$/energy_case_study.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/energy_monitoring.html" beforeDir="false" afterPath="$PROJECT_DIR$/energy_monitoring.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gateways.html" beforeDir="false" afterPath="$PROJECT_DIR$/gateways.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/industrial_monitoring.html" beforeDir="false" afterPath="$PROJECT_DIR$/industrial_monitoring.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iot-platform-features.html" beforeDir="false" afterPath="$PROJECT_DIR$/iot-platform-features.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/meters.html" beforeDir="false" afterPath="$PROJECT_DIR$/meters.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mining_case_study.html" beforeDir="false" afterPath="$PROJECT_DIR$/mining_case_study.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sensors.html" beforeDir="false" afterPath="$PROJECT_DIR$/sensors.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather_case_study.html" beforeDir="false" afterPath="$PROJECT_DIR$/weather_case_study.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +53,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="settings.php.debug.servers" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -65,7 +74,8 @@
       <workItem from="1669015610272" duration="394000" />
       <workItem from="1669034153674" duration="1480000" />
       <workItem from="1669220357652" duration="52000" />
-      <workItem from="1669220422683" duration="3429000" />
+      <workItem from="1669220422683" duration="4687000" />
+      <workItem from="1669392924168" duration="2381000" />
     </task>
     <servers />
   </component>
