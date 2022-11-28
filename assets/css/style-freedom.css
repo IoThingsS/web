@@ -3555,7 +3555,7 @@ a.actionbg3.btn:hover {
 }
 
 .w3l-header-4 nav ul ul li a:hover {
-  background: #faf9fe;
+  /*background: #faf9fe;*/
   transition: 0.3s ease;
 }
 

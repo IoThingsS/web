@@ -6,6 +6,7 @@
       <change beforePath="$PROJECT_DIR$/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/about.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/air_case_study.html" beforeDir="false" afterPath="$PROJECT_DIR$/air_case_study.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/air_monitoring.html" beforeDir="false" afterPath="$PROJECT_DIR$/air_monitoring.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/style-freedom.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style-freedom.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/borewell_monitoring.html" beforeDir="false" afterPath="$PROJECT_DIR$/borewell_monitoring.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/contact.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dg_case_study.html" beforeDir="false" afterPath="$PROJECT_DIR$/dg_case_study.html" afterDir="false" />
@@ -52,7 +53,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../erp" />
     <property name="settings.editor.selected.configurable" value="settings.php.debug.servers" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -75,7 +76,9 @@
       <workItem from="1669034153674" duration="1480000" />
       <workItem from="1669220357652" duration="52000" />
       <workItem from="1669220422683" duration="4687000" />
-      <workItem from="1669392924168" duration="2381000" />
+      <workItem from="1669392924168" duration="2921000" />
+      <workItem from="1669626098182" duration="10000" />
+      <workItem from="1669626198898" duration="2951000" />
     </task>
     <servers />
   </component>
