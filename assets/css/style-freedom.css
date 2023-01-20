@@ -73,6 +73,7 @@ html {
 
 .img-responsive {
   max-width: 100%;
+  height: auto;
   display: block;
 }
 
@@ -221,6 +222,7 @@ a.actionbg3.btn:hover {
       format("svg");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 .fa {
@@ -3374,6 +3376,10 @@ a.actionbg3.btn:hover {
   font-size: 36px;
 }
 
+a.brand-logo{
+  width: 160px;
+}
+
 .w3l-header-4 input#nav {
   display: none;
 }
@@ -5459,6 +5465,8 @@ a.actionbg3.btn:hover {
 }
 .w3l-customers-7 .custo-img-res {
   float: left;
+  /*height: 15rem;
+  width: 16rem;*/
 }
 .w3l-customers-7 .custo-img-res img {
   border-radius: 50%;
