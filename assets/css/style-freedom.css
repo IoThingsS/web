@@ -3897,7 +3897,7 @@ a.brand-logo{
 }
 .w3l-hero-headers-14 .hh14-block {
   padding: 0 0 4.5rem 0;
-  background: url(../images/bg-overlay.png) no-repeat 0px 0px;
+  background: url(../images/bg-overlay.webp) no-repeat 0px 0px;
   background-size: cover;
   min-height: 650px;
   background-attachment: fixed;
@@ -5405,7 +5405,7 @@ a.brand-logo{
   /* responsive code */
 }
 .w3l-customers-7 .customers_sur {
-  background: url(../images/banner-2.jpg) no-repeat center;
+  background: url(../images/banner-2.webp) no-repeat center;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
