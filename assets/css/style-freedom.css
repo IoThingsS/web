@@ -36,6 +36,22 @@ html {
   .wrapper {
     max-width: 540px;
   }
+
+  
+}
+
+@media (max-width: 576px) {
+  .wrapper1 {
+    /*max-width: 500px;
+    height: 240px;*/
+    display: none;
+  }
+
+  .customers_grid{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
 }
 
 @media (min-width: 768px) {
@@ -44,11 +60,23 @@ html {
   }
 }
 
+/*@media (min-width: 768px) {
+  .wrapper1 {
+    max-width: 720px;
+  }
+}*/
+
 @media (min-width: 992px) {
   .wrapper {
     max-width: 960px;
   }
 }
+
+/*@media (min-width: 992px) {
+  .wrapper1 {
+    max-width: 960px;
+  }
+}*/
 
 @media (min-width: 1200px) {
   .wrapper {
@@ -57,6 +85,20 @@ html {
   .wrapper2 {
     max-width: 1300px;
   }
+  .justify-content-between{
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 1200px) {
+  .wrapper1 {
+    margin-left: 120px;
+    margin-bottom: 30px;
+    width: 853px;
+    height: 480px;
+    justify-content: center;
+  }
+  
 }
 
 .wrapper-full {
@@ -73,7 +115,6 @@ html {
 
 .img-responsive {
   max-width: 100%;
-  height: auto;
   display: block;
 }
 
@@ -83,6 +124,8 @@ html {
 
 .d-flex {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   display: -webkit-flex;
 }
 
@@ -5451,8 +5494,12 @@ a.brand-logo{
   float: left;
   width: 32%;
 }
+
 .w3l-customers-7 .customers-top_sur {
   margin-top: 4em;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 .w3l-customers-7 .customers_grid {
   padding: 30px 30px;
@@ -5485,7 +5532,7 @@ a.brand-logo{
 @media screen and (max-width: 1190px) {
   .w3l-customers-7 .custo-img-res {
     float: left;
-    width: 24%;
+    min-width: 24%;
   }
   .w3l-customers-7 .custo_grid {
     margin-left: 0.8em;
@@ -5509,6 +5556,10 @@ a.brand-logo{
   }
   .w3l-customers-7 .customers-top_sur {
     margin-top: 3em;
+    display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 100%;
   }
 }
 @media screen and (max-width: 900px) {
@@ -5542,17 +5593,18 @@ a.brand-logo{
 }
 @media screen and (max-width: 667px) {
   .w3l-customers-7 .custo-img-res {
-    width: 16%;
+    min-width: 16%;
+    
   }
 }
 @media screen and (max-width: 568px) {
   .w3l-customers-7 .custo-img-res {
-    width: 18%;
+    min-width: 18%;
   }
 }
 @media screen and (max-width: 480px) {
   .w3l-customers-7 .custo-img-res {
-    width: 22%;
+    min-width: 22%;
   }
 }
 @media screen and (max-width: 415px) {
@@ -5568,11 +5620,12 @@ a.brand-logo{
   }
   .w3l-customers-7 .customers-top_sur {
     margin-top: 2.3em;
+    
   }
 }
 @media screen and (max-width: 387px) {
   .w3l-customers-7 .custo-img-res {
-    width: 25%;
+    min-width: 25%;
   }
   .w3l-customers-7 .customers_sur p {
     font-size: 16px;
@@ -5582,6 +5635,11 @@ a.brand-logo{
   }
   .w3l-customers-7 .customers-top_sur {
     margin-top: 2em;
+    display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 100%;
+  width: 100%;
   }
 }
 @media screen and (max-width: 320px) {
