@@ -50,13 +50,21 @@ html {
   .customers_grid{
     display: flex;
     flex-direction: column;
-    width: 100%;
+    align-items: center;
   }
 }
 
 @media (min-width: 768px) {
   .wrapper {
     max-width: 720px;
+  }
+  .wrapper1 {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    width: 550px;
+    height: 280px;
+    justify-content: center;
   }
 }
 
@@ -69,6 +77,15 @@ html {
 @media (min-width: 992px) {
   .wrapper {
     max-width: 960px;
+  }
+
+  .wrapper1 {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    width: 653px;
+    height: 340px;
+    justify-content: center;
   }
 }
 
@@ -92,7 +109,8 @@ html {
 
 @media (min-width: 1200px) {
   .wrapper1 {
-    margin-left: 80px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 30px;
     width: 853px;
     height: 480px;
@@ -5473,7 +5491,7 @@ a.brand-logo{
   line-height: 20px;
   color: var(--btn-color);
   margin-top: 3px;
-  display: block;
+  
 }
 .w3l-customers-7 .customers_sur p {
   font-size: 20px;
@@ -5497,9 +5515,11 @@ a.brand-logo{
 
 .w3l-customers-7 .customers-top_sur {
   margin-top: 4em;
+
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  align-items: center;
 }
 .w3l-customers-7 .customers_grid {
   padding: 30px 30px;
@@ -5509,6 +5529,8 @@ a.brand-logo{
   float: left;
   margin-left: 1.2em;
   margin-top: 5px;
+  margin-left: auto;
+    margin-right: auto;
 }
 .w3l-customers-7 .custo-img-res {
   float: left;
@@ -5537,6 +5559,8 @@ a.brand-logo{
   .w3l-customers-7 .custo_grid {
     margin-left: 0.8em;
     margin-top: 3px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .w3l-customers-7 .customers_sur span {
     font-size: 14px;
@@ -5561,6 +5585,15 @@ a.brand-logo{
   flex-direction: column;
   width: 100%;
   }
+
+  .w3l-customers-7 .col-3{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex: 0 0 auto;
+    width: 40%;
+    margin-bottom: 30px;
+  }
 }
 @media screen and (max-width: 900px) {
   .w3l-customers-7 .customers_sur {
@@ -5578,6 +5611,13 @@ a.brand-logo{
   .w3l-customers-7 .customers_sur span {
     font-size: 12px;
   }
+  .w3l-customers-7 .col-3{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 40%;
+    margin-bottom: 30px;
+  }
 }
 @media screen and (max-width: 800px) {
   .w3l-customers-7 .customers_sur h3 {
@@ -5585,10 +5625,17 @@ a.brand-logo{
     line-height: 40px;
   }
   .w3l-customers-7 .custo-img-res {
-    width: 12%;
+    min-width: 12%;
   }
   .w3l-customers-7 .custo_grid {
     margin-top: 8px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .w3l-customers-7 .col-3{
+    flex: 0 0 auto;
+    width: 70%;
+    margin-bottom: 15px;
   }
 }
 @media screen and (max-width: 667px) {
@@ -5596,15 +5643,30 @@ a.brand-logo{
     min-width: 16%;
     
   }
+  .w3l-customers-7 .col-3{
+    flex: 0 0 auto;
+    width: 70%;
+    margin-bottom: 15px;
+  }
 }
 @media screen and (max-width: 568px) {
   .w3l-customers-7 .custo-img-res {
     min-width: 18%;
   }
+  .w3l-customers-7 .col-3{
+    flex: 0 0 auto;
+    width: 70%;
+    margin-bottom: 15px;
+  }
 }
 @media screen and (max-width: 480px) {
   .w3l-customers-7 .custo-img-res {
     min-width: 22%;
+  }
+  .w3l-customers-7 .col-3{
+    flex: 0 0 auto;
+    width: 70%;
+    margin-bottom: 15px;
   }
 }
 @media screen and (max-width: 415px) {
@@ -5617,10 +5679,20 @@ a.brand-logo{
   }
   .w3l-customers-7 .customers-bottom_sur {
     margin-top: 2em;
+    align-items: center;
   }
   .w3l-customers-7 .customers-top_sur {
     margin-top: 2.3em;
     
+  }
+  .w3l-customers-7 .col-3{
+    flex: 0 0 auto;
+    width: 70%;
+    margin-bottom: 15px;
+  }
+  .w3l-customers-7 .custo_grid{
+    text-align: center;
+    align-items: center;
   }
 }
 @media screen and (max-width: 387px) {
@@ -5632,6 +5704,8 @@ a.brand-logo{
   }
   .w3l-customers-7 .custo_grid {
     margin-top: 7px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .w3l-customers-7 .customers-top_sur {
     margin-top: 2em;
@@ -5654,6 +5728,8 @@ a.brand-logo{
   }
   .w3l-customers-7 .custo_grid {
     width: 64%;
+    margin-left: auto;
+    margin-right: auto;
   }
   .w3l-customers-7 .custo-img-res {
     width: 28%;
