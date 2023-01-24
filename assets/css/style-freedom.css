@@ -3373,10 +3373,16 @@ a.actionbg3.btn:hover {
   .w3l-top-menu-1 .accounts li:nth-child(2) {
     width: 48%;
   }
+  .w3l-top-menu-1{
+    display: none;
+  }
 }
 @media (max-width: 384px) {
   .w3l-top-menu-1 .top-head li {
     margin: 0px 6px;
+  }
+  .w3l-top-menu-1{
+    display: none;
   }
 }
 @media (max-width: 320px) {
@@ -3388,6 +3394,9 @@ a.actionbg3.btn:hover {
   }
   .w3l-top-menu-1 .accounts li {
     font-size: 15px;
+  }
+  .w3l-top-menu-1{
+    display: none;
   }
 }
 
@@ -3900,6 +3909,7 @@ a.brand-logo{
     right: 5.8em;
     top: 0.9em;
   }
+
 }
 
 @media (max-width: 387px) {
@@ -3937,13 +3947,13 @@ a.brand-logo{
 
 @media (max-width: 500px) {
   .w3l-header-4 {
-    top: 120px;
+    top: 0px;
   }
 }
 
 @media (max-width: 387px) {
   .w3l-header-4 {
-    top: 128px;
+    top: 0px;
   }
 }
 
