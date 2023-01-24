@@ -5550,6 +5550,7 @@ a.brand-logo{
   .w3l-customers-7 .customers_sur span {
     font-size: 14px;
   }
+  
 }
 @media screen and (max-width: 1190px) {
   .w3l-customers-7 .custo-img-res {
@@ -5567,6 +5568,13 @@ a.brand-logo{
     margin-top: 0px;
   }
 }
+@media screen and (min-width: 991px) {
+  .w3l-customers-7 .img-responsive1{
+    margin-bottom: 24px;
+  }
+  
+}
+
 @media screen and (max-width: 991px) {
   .w3l-customers-7 .customers-left_sur {
     width: 100%;
