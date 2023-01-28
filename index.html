@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
 
     <!-- Primary Meta Tags -->
     <title>IOThingsS | Home</title>
@@ -37,6 +40,7 @@
     <meta property="twitter:description"
         content="We Provide Customized IoT Solutions in various technologies specific to your needs. We provide the required customized hardware and installations to make your work automated.">
     <meta property="twitter:image" content="">
+
 
 
 </head>
@@ -215,7 +219,6 @@
                 margin-bottom: 0;
             }
         }
-    </style>
 
     <!--<script>
     const mobileNav = document.querySelector(".wrapper1");
@@ -234,6 +237,18 @@
 </script> -->
 
 
+        .carousel-item {
+            transition: transform 2.6s ease-in-out;
+          }
+          
+          .carousel-fade .active.carousel-item-start,
+          .carousel-fade .active.carousel-item-end {
+            transition: opacity 0s 2.6s;
+          }
+
+    </style>
+
+    
     <!-- Top Menu 1 -->
     <section class="w3l-top-menu-1 p-sticky-md">
         <div class="top-hd">
@@ -390,122 +405,65 @@
     </section>
     <!-- Headers-4 block -->
     <!-- Heroheader14 block -->
-    <section class="w3l-hero-headers-14">
-        <div class="hh14-block">
-
-            <section id="hh14-content">
-                <div class="wrapper">
-
-                    <div>
-                        <!-- main-slider -->
-                        <div class="main-slider">
-                            <div class="csslider infinity" id="slider1">
-                                <input type="radio" name="slides" checked="checked" id="slides_1" />
-                                <input type="radio" name="slides" id="slides_2" />
-                                <input type="radio" name="slides" id="slides_3" />
-                                <input type="radio" name="slides" id="slides_4" />
-                                <input type="radio" name="slides" id="slides_5" />
-
-                                <ul>
-                                    <li>
-                                        <div class="slider-info">
-                                            <div class="d-grid hh14-text">
-                                                <div class="hh14-info">
-                                                    <h6>BUILDING UP VISION LEADING FUTURE</h6>
-                                                    <h3>Customized IoT Solutions</h3>
-                                                    <p>We provide customized IoT Cloud Platform with the features of
-                                                        monitoring, control and notification</p>
-                                                    <a href="gateways.html" class="actionbg btn">Start Exploring</a>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </li>
-
-                                    <li>
-                                        <div class="slider-info">
-                                            <div class="d-grid hh14-text">
-                                                <div class="hh14-info">
-                                                    <h6>BUILDING UP VISION LEADING FUTURE</h6>
-                                                    <h3>IoT Cloud Platform </h3>
-                                                    <p>On our Cloud platform you can connect data from sensors,
-                                                        smart-devices, computers, or any internet-enable device</p>
-                                                    <a href="gateways.html" class="actionbg btn">Start Exploring</a>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </li>
-
-                                    <li>
-                                        <div class="slider-info">
-                                            <div class="d-grid hh14-text">
-                                                <div class="hh14-info">
-                                                    <h6>BUILDING UP VISION LEADING FUTURE</h6>
-                                                    <h3>Customized Hardware </h3>
-                                                    <p>We even supply the required customized hardware, making your life
-                                                        even easier</p>
-                                                    <a href="gateways.html" class="actionbg btn">Start Exploring</a>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </li>
-
-                                    <li>
-                                        <div class="slider-info">
-                                            <div class="d-grid hh14-text">
-                                                <div class="hh14-info">
-                                                    <h6>BUILDING UP VISION LEADING FUTURE</h6>
-                                                    <h3>Great Technology, Best Services</h3>
-                                                    <p>Rest assured we, with the experience of <b>30+</b> completed
-                                                        projects and about a dozen customers, will try to provide you
-                                                        the best product and services</p>
-                                                    <a href="gateways.html" class="actionbg btn">Start Exploring</a>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </li>
-
-                                    <li>
-                                        <div class="slider-info">
-                                            <div class="d-grid hh14-text">
-                                                <div class="hh14-info">
-                                                    <h6>BUILDING UP VISION LEADING FUTURE</h6>
-                                                    <h3>Developer Support Team </h3>
-                                                    <p>We also have support team made available to help you with your
-                                                        queries.
-                                                        Contacting the team you could give suggestions, make
-                                                        customization or other requests.
-                                                    </p>
-                                                    <a href="gateways.html" class="actionbg btn">Start Exploring</a>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-
-                                <div class="navigation">
-                                    <div>
-                                        <label for="slides_1"></label>
-                                        <label for="slides_2"></label>
-                                        <label for="slides_3"></label>
-                                        <label for="slides_4"></label>
-                                        <label for="slides_5"></label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- /main-slider -->
-                    </div>
-
-                </div>
-
-            </section>
+    <div id="carouselExampleCaptions" class="carousel slide carouse-fade" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
         </div>
-    </section>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./assets/images/bg-overlay.png" class="d-block w-100" alt="..." style="height: 36rem">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h6>BUILDING UP VISION LEADING FUTURE</h6>
+                    <h1>Customized IoT </h1>
+                    <h1>Solutions</h1>
+                    <p>We provide Customized IoT Cloud Platform with the features of monitoring, <br> control and notification.</p>
+                    <a href="gateways.html" class="actionbg btn">Start Exploring</a>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="./assets/images/bg-overlay.png" class="d-block w-100" alt="..." style="height: 36rem">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h6>BUILDING UP VISION LEADING FUTURE</h6>
+                    <h1>IoT Cloud Platform</h1>
+                    <p>On our Cloud platform you can connect data from sensors, smart-devices, computers, or any <br> internet-enable device</p>
+                    <a href="gateways.html" class="actionbg btn">Start Exploring</a>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="./assets/images/bg-overlay.png" class="d-block w-100" alt="..." style="height: 36rem">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h6>BUILDING UP VISION LEADING FUTURE</h6>
+                    <h1>Customized Hardware </h1>
+                    <p>We even supply the required customized hardware, making your life even easier</p>
+                    <a href="gateways.html" class="actionbg btn">Start Exploring</a>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="./assets/images/bg-overlay.png" class="d-block w-100" alt="..." style="height: 36rem">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h6>BUILDING UP VISION LEADING FUTURE</h6>
+                    <h1>Great Technology, </h1>
+                    <h1>Best Services</h1>
+                    <p>Rest assured we, with the experience of 30+ completed projects and about a dozen customers, will<br>
+                    try to provide you the best product and services</p>
+                    <a href="gateways.html" class="actionbg btn">Start Exploring</a>
+                  </div>
+                </div>
+              
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     <!-- Heroheader14 block -->
     <!-- specifications -->
     <section class="w3l-specifications-9">
@@ -1073,6 +1031,27 @@
         <!-- /move top -->
     </section>
     <!-- //footer-29 block -->
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("carousel-item");
+         let dots = document.getElementsByClassName("carousel-caption");
+         for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+         }
+         slideIndex++;
+         if (slideIndex > slides.length) {slideIndex = 1}    
+         for (i = 0; i < dots.length; i++) {
+         dots[i].className = dots[i].className.replace(" active", "");
+         }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 4000); // Change image every 2 seconds
+}  
+      </script>
 
 </body>
 
