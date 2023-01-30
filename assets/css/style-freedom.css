@@ -3476,6 +3476,46 @@ a.actionbg3.btn:hover {
   text-transform: capitalize;
 }
 
+
+.w3l-header-4 nav a {
+  background-image: linear-gradient(
+    to right,
+    #0670cb,
+    #444d50 50%,
+    #000 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+
+.w3l-header-4 nav a :before {
+  content: '';
+  background: #54b3d6;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+.w3l-header-4 nav a:hover {
+ background-position: 0;
+}
+
+.w3l-header-4 nav a:hover::before {
+  width:100%;
+}
+
+
 .w3l-header-4 .angle-dropdown {
   display: inline-block;
   width: 0;
