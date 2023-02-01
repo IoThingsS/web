@@ -32,6 +32,10 @@ html {
   margin-left: auto;
 }
 
+.carousel-caption{
+  margin-bottom: 90px;
+}
+
 @media (min-width: 576px) {
   .wrapper {
     max-width: 540px;
@@ -39,6 +43,7 @@ html {
 
   
 }
+
 
 @media (max-width: 576px) {
   .wrapper1 {
@@ -103,7 +108,8 @@ html {
     max-width: 1300px;
   }
   .justify-content-between{
-    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -138,7 +144,7 @@ html {
   margin-right: auto;
 }
 
-.d-grid {
+.grid {
   display: grid;
 }
 
@@ -3945,7 +3951,8 @@ a.brand-logo{
     font-size: 30px;
   }
   .w3l-header-4 .toggle {
-    margin-top: 2px;
+    margin-top: 19px;
+    margin-right: 13px;
   }
   .w3l-header-4 .button {
     right: 5.8em;
@@ -3959,10 +3966,11 @@ a.brand-logo{
     font-size: 30px;
   }
   .w3l-header-4 .toggle {
-    margin-top: 2px;
+    margin-top: 19px;
+    margin-right: 13px;
   }
   .w3l-header-4 [id^="drop"]:checked + ul {
-    top: 223px;
+    top: 96px;
   }
 }
 
@@ -5613,6 +5621,14 @@ a.brand-logo{
   }
   
 }
+
+@media screen and (min-width: 991px) {
+  .w3l-customers-7 .img-responsive1{
+    margin-bottom: 24px;
+  }
+
+}
+
 @media screen and (max-width: 1190px) {
   .w3l-customers-7 .custo-img-res {
     float: left;
