@@ -134,6 +134,8 @@ html {
 .img-responsive {
   max-width: 100%;
   display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .d-grid {
@@ -3550,6 +3552,46 @@ a.brand-logo{
   text-transform: capitalize;
 }
 
+
+.w3l-header-4 nav a {
+  background-image: linear-gradient(
+    to right,
+    #0670cb,
+    #444d50 50%,
+    #000 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+
+.w3l-header-4 nav a :before {
+  content: '';
+  background: #54b3d6;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+.w3l-header-4 nav a:hover {
+ background-position: 0;
+}
+
+.w3l-header-4 nav a:hover::before {
+  width:100%;
+}
+
+
 .w3l-header-4 .angle-dropdown {
   display: inline-block;
   width: 0;
@@ -5339,11 +5381,11 @@ a.brand-logo{
 .w3l-content-with-photo-4 .cwp4-two {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  grid-gap: 3rem;
-  justify-content: center;
+  grid-gap: 6rem;
 }
 .w3l-content-with-photo-4 .cwp4-text {
   align-self: center;
+  margin-left: 11px;
 }
 .w3l-content-with-photo-4 .cwp4-text h4 {
   font-size: 26px;
@@ -5414,7 +5456,7 @@ a.brand-logo{
 .w3l-features-6 .fea-gd-vv {
   grid-template-columns: 1fr 1fr 1fr;
   display: grid;
-  grid-gap: 20px;
+  grid-gap: 120px;
 }
 .w3l-features-6 .features h3 {
   font-size: 25px;
@@ -5447,6 +5489,7 @@ a.brand-logo{
     grid-template-columns: 1fr;
     display: grid;
     grid-gap: 0px;
+    margin-left: 40px;
   }
   .w3l-features-6 .float-rt,
   .w3l-features-6 .float-lt {
@@ -5473,6 +5516,9 @@ a.brand-logo{
 @media (max-width: 480px) {
   .w3l-features-6 p {
     font-size: 15px;
+  }
+  .w3l-features-6 .fea-gd-vv {
+    margin-left: 10px;
   }
 }
 
