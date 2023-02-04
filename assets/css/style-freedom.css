@@ -6246,6 +6246,30 @@ a.brand-logo{
   line-height: 24px;
   color: var(--text-color);
 }
+.w3l-footer-29-main .footer-list-29 ul li a {
+  background-image: linear-gradient(
+    to right,
+    #0670cb,
+    #444d50 50%,
+    #000 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.w3l-footer-29-main .footer-list-29 ul li a:hover {
+ background-position: 0;
+}
+
+.w3l-footer-29-main .footer-list-29 ul li a:hover::before{
+  width: 100%;
+}
+
 .w3l-footer-29-main .main-social-footer-29 a {
   margin-right: 25px;
 }
