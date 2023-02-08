@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<urlset>
+
 
 <url>
   <loc>https://iothingss.com/</loc>
@@ -93,7 +95,7 @@
 <url>
   <loc>https://iothingss.com/contact.html</loc>
   <lastmod>2023-02-07T08:23:15+00:00</lastmod>
-  <priority>0.90</priority>
+  <priority>0.80</priority>
 </url>
 <url>
   <loc>https://iothingss.com/ecommerce-single-ethernet-io-module.html</loc>
