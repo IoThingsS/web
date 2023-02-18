@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <!-- Primary Meta Tags Contact Us -->
+    <!-- Primary Meta Tags Contact Us -->
     <title>IOThingsS | Contact Us</title>
     <meta name="title" content="IOThingsS | Contact Us">
     <meta name="description" content="Contact Info
@@ -30,7 +30,7 @@
     +91 98508 39592  Email info@iothingss.com Company Headquarters
     Survey No 11,Kondhwa,Near Khadi Machine Chowk Pune 411048">
     <meta property="twitter:image" content="">
-    
+
     <link rel="stylesheet" href="./assets/css/style-freedom.css">
     <script src="https://kit.fontawesome.com/ae8c1e334a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
@@ -59,9 +59,9 @@
 
     <script>
         function sendContact() {
-                event.preventDefault();
-                document.getElementById("loadingMessage").style.display = "block";
-                jQuery.ajax({
+            event.preventDefault();
+            document.getElementById("loadingMessage").style.display = "block";
+            jQuery.ajax({
                 url: "https://qjtechnologies.com/mail/contact_iothingss.php",
                 data: {
                     w3lName: $("#w3lName").val(),
@@ -69,37 +69,47 @@
                     w3lSender: $("#w3lSender").val(),
                     w3lPhone: $("#w3lPhone").val(),
                     w3lMessage: $("#w3lMessage").val()
-                  },
-                type: "POST",
-                success:function(data){
-                $("#mail-status").html(data);
-                console.log("Success");
-                document.getElementById("loadingMessage").style.display = "none";
-                document.getElementById("successMessage").style.display = "block";
-                document.getElementById("successMessage").style.backgroundColor = "#12CC1A";
-                document.getElementById("successMessage").style.textAlign = "center";
-                document.getElementById("successMessage").style.margin = "7px";
-                document.getElementById("successMessage").style.fontSize = "larger";
-                document.getElementById("successMessage").style.padding = "6px";
-                document.getElementById("myForm").reset();
                 },
-                error:function (){}
-                });
-            }
+                type: "POST",
+                success: function (data) {
+                    $("#mail-status").html(data);
+                    console.log("Success");
+                    document.getElementById("loadingMessage").style.display = "none";
+                    document.getElementById("successMessage").style.display = "block";
+                    document.getElementById("successMessage").style.backgroundColor = "#12CC1A";
+                    document.getElementById("successMessage").style.textAlign = "center";
+                    document.getElementById("successMessage").style.margin = "7px";
+                    document.getElementById("successMessage").style.fontSize = "larger";
+                    document.getElementById("successMessage").style.padding = "6px";
+                    document.getElementById("myForm").reset();
+                },
+                error: function () { }
+            });
+        }
     </script>
 
-    
+
 
     <!-- Demo bar start -->
     <link rel="stylesheet" href="./assests/css/font-awesome.min.css">
     <!-- New toolbar-->
     <style>
-
-        .success{
-            background-color: #12CC1A;border:#0FA015 1px solid;padding: 5px 10px;color: #FFFFFF;border-radius:4px;
+        .success {
+            background-color: #12CC1A;
+            border: #0FA015 1px solid;
+            padding: 5px 10px;
+            color: #FFFFFF;
+            border-radius: 4px;
         }
-        #loadingMessage{
-            background-color: #12CC1A;border:#0FA015 1px solid;padding: 6px; text-align: center; margin: 7px; font-size: large; color : black;
+
+        #loadingMessage {
+            background-color: #12CC1A;
+            border: #0FA015 1px solid;
+            padding: 6px;
+            text-align: center;
+            margin: 7px;
+            font-size: large;
+            color: black;
         }
 
         * {
@@ -251,9 +261,6 @@
                 margin-bottom: 0;
             }
         }
-
-        
-
     </style>
 
     <!-- Top Menu 1 -->
@@ -344,7 +351,7 @@
                                     <li><a href="meters.html" class="drop-text">Meters</a></li>
                                 </ul>
                             </li>
-                            
+
                             <li><a href="ecommerce.html">Shop</a></li>
                             <li><a href="iot-platform-features.html">IoT Platform</a></li>
                             <li style="padding:5px">
@@ -370,6 +377,7 @@
                                             SOlution</a></li>
                                     <li><a href="cold_storage_case_study.html" style="width:300px"
                                             class="drop-text">Cold Storage</a></li>
+                                    <li><a href="spc_case_study.html" style="width:300px" class="drop-text">SPC</a></li>
                                     <!-- <li><a href="dmc_tipper_case_study.html" style ="width:300px" class="drop-text">DMC Tipper Solutions</a>
                                     </li> -->
                                 </ul>
@@ -452,7 +460,7 @@
                     </div>
                     <div class="map-content-9">
                         <!-- <form action="mail.php" method="POST" id="myForm"> -->
-                            <form action="" id="myForm">
+                        <form action="" id="myForm">
                             <div id="loadingMessage" style="display:none">Sending...</div>
                             <div id="successMessage" style="display:none">Message sent successfully!</div>
                             <div class="twice-two">
@@ -614,7 +622,8 @@
                 </div>
                 <div class="d-grid grid-col-2 bottom-copies">
                     <p class="copy-footer-29">© 2022 IOThingsS. All rights reserved.</p>
-                    <p class="sub-paragraph right-side-con">Design By <a href="https://www.qjtechnologies.com">QJ Technologies</a></p>
+                    <p class="sub-paragraph right-side-con">Design By <a href="https://www.qjtechnologies.com">QJ
+                            Technologies</a></p>
                 </div>
             </div>
         </div>
