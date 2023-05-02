@@ -262,8 +262,8 @@
                 <!-- The Modal -->
                 <div id="myModal" class="modal">
                     <!-- Modal content -->
-                    <div class="modal-dialog modal-dialog-scrollable modal-sm" style="height: 400px;">
-                        <div class="modal-content" style="background-color:rgb(243, 243, 247)">
+                    <div class="modal-dialog modal-sm" style="height: 500px; width: 700px;">
+                        <div class="modal-content" >
                             <div class="modal-header">
                                 <!-- <span class="close">&times;</span> -->
                                 <h2>Quote Request</h2>
@@ -277,25 +277,29 @@
                                     <div id="loadingMessage" style="display:none">Sending...</div>
                                     <div id="successMessage" style="display:none">Message sent successfully!</div>
                                     <div class="twice-two">
-                                        <input type="text" name="w3lName" id="w3lName" placeholder="Name" required >
+                                        <input type="text" name="w3lName" id="w3lName" placeholder="Name" required style="border-bottom: 1px solid rgb(109, 106, 106); border-radius:5px; width:100%">
                                         <br>
                                         <br>
-                                        <input type="text" name="w3lCompany" id="w3lCompany" placeholder="Company" required>
+                                        <input type="text" name="w3lCompany" id="w3lCompany" placeholder="Company" required style="border-bottom: 1px solid rgb(109, 106, 106); border-radius:5px; width:100%">
                                         <br>
                                         <br>
                                     </div>
                                     <div class="twice-two">
-                                        <input type="email" name="w3lSender" id="w3lSender" placeholder="Email" required="">
+                                        <input type="email" name="w3lSender" id="w3lSender" placeholder="Email" required="" style="border-bottom: 1px solid rgb(109, 106, 106); border-radius:5px; width:100%">
                                         <br>
                                         <br>
-                                        <input type="text" name="w3lPhone" id="w3lPhone" placeholder="Phone" required="">
+                                        <input type="text" name="w3lPhone" id="w3lPhone" placeholder="Phone" required="" style="border-bottom: 1px solid rgb(109, 106, 106); border-radius:5px; width:100%">
                                         <br>
                                         <br>
                                     </div>
-                                    <textarea name="w3lMessage" id="w3lMessage" placeholder="Message" required="" cols="30" rows="4"></textarea>
+                                    <textarea name="w3lMessage" id="w3lMessage" placeholder="Message" required="" cols="30" rows="4" style="border-bottom: 1px solid rgb(109, 106, 106); border-radius:5px; width:100%"></textarea>
                                     <br>
                                     <!-- <button type="submit">Send</button> -->
-                                    <button name="submit" class="btnAction" onclick="sendContact();" style="border-radius: 6px;">Submit</button>
+                                    <div style="display: flex;
+                                    justify-content: center;
+                                    align-items: center;">
+                                    <button name="submit" class="btnAction" onclick="sendContact();" style="border-radius: 6px; background-color: rgb(167, 167, 204);">Submit</button>
+                                    </div>
                                 </form>
 
                             </div>
