@@ -1,0 +1,1275 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>4G/LTE Gateway</title>
+    <link rel="stylesheet" href="./productGateway/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <link rel="stylesheet" href="./prductGateway/assests/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./productGateway/assets/css/style-freedom.css">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-zoom/1.7.21/jquery.zoom.min.js"></script>
+    <script src="https://kit.fontawesome.com/ae8c1e334a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src='//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
+    <script src="//m.servedby-buysellads.com/monetization.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        .docs-container {
+            display: flex;
+            width: 100%;
+        }
+
+        .docs-section {
+            flex-grow: 1;
+        }
+
+        .docs-section .far {
+            color: #335f87;
+        }
+
+        #tab-documentation .fusion-fullwidth {
+            padding: 0 !important;
+        }
+
+        #tab-documentation .icon-wrapper {
+            justify-content: start;
+            margin-right: 0 !important;
+        }
+
+        #tab-documentation .fusion-li-item-content {
+            margin-left: 27px !important;
+        }
+
+        #overlay {
+            display: none;
+            position: fixed;
+            z-index: 9999;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+          }
+
+          #overlay.enlarged {
+            background-color: rgba(0, 0, 0, 0.85);
+          }
+          
+          #overlay img {
+            display: block;
+            max-width: 80%;
+            max-height: 80%;
+            margin: auto;
+            margin-top: 10%;
+          }
+
+          #overlay img.enlarged {
+            transform: scale(1.5);
+          }
+
+          .close-btn {
+            color: red;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 52px;
+            color: #fff;
+            cursor: pointer;
+          }
+    </style>
+    <!-- <header class="d-flex align-items-center">
+        <div class="logo mr-auto">
+            <img src="iothings.webp">
+        </div>
+        &nbsp
+        &nbsp
+        <div class="search-bar">
+            <form class="form-inline">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search...">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+        <nav class="ml-auto">
+            <ul class="nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header> -->
+    <!-- Top Menu 1 -->
+    <section class="w3l-top-menu-1 p-sticky-md">
+        <div class="top-hd">
+            <div class="wrapper">
+                <header class="d-grid grid-columns-2">
+
+
+                    <div class="accounts">
+                        <ul>
+                            <li class="top_li"><span class="fa fa-mobile"></span><a href="tel:+91 98508 39592">+91 98508
+                                    39592</a>
+                            </li>
+                            <li class="top_li1"><span class="fa fa-map-marker"></span>Survey No 11,Kondhwa,Near Khadi
+                                Machine Chowk
+                                Pune 411048</li>
+                            <li class="top_li2"><span class="fa fa-envelope-o"></span>info@iothingss.com
+                            </li>
+                        </ul>
+                    </div>
+                </header>
+            </div>
+        </div>
+    </section>
+    <!-- //Top Menu 1 -->
+    <!-- Headers-4 block -->
+    <section class="w3l-header-4">
+        <header id="headers4-block">
+            <div class="wrapper">
+                <div class="d-grid nav-mobile-block header-align">
+                    <div class="logo">
+                        <a class="brand-logo" href="index.html">
+                            <img src="./productGateway/iothings.webp" alt="iothings" style="height:75px;">
+                        </a>
+                        <!-- if logo is image enable this   
+                    <a class="brand-logo" href="#index.html">
+                        <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
+                    </a> -->
+                    </div>
+                    <input type="checkbox" id="nav" />
+                    <label class="nav" for="nav"></label>
+                    <nav>
+                        <label for="drop" class="toggle">Menu</label>
+                        <input type="checkbox" id="drop">
+                        <ul class="menu">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li style="padding:5px">
+                                <!-- sumenu Drop Down -->
+                                <label for="drop-7" class="toggle toogle-3">IoT Monitoring <span class="angle-dropdown"
+                                        aria-hidden="true"></span>
+                                </label>
+                                <a href="#IoT Monitoring">IoT Monitoring <span class="angle-dropdown"
+                                        aria-hidden="true"></span></a>
+                                <input type="checkbox" id="drop-7">
+
+                                <ul style="width:260px;margin-top:15px">
+                                    <li><a href="dg_monitoring.html" style="width:260px" class="drop-text">DG
+                                            Monitoring</a></li>
+                                    <!-- <li><a href="air_monitoring.html" style="width:260px" class="drop-text">Air
+                                            Monitoring</a></li> -->
+                                    <li><a href="energy_monitoring.html" style="width:260px" class="drop-text">Energy
+                                            Monitoring</a></li>
+                                    <li><a href="industrial_monitoring.html" style="width:260px"
+                                            class="drop-text">Industrial & Control
+                                            Monitoring</a></li>
+                                    <li><a href="borewell_monitoring.html" style="width:260px"
+                                            class="drop-text">Borewell Monitoring</a>
+                                    </li>
+                                    <li><a href="cold_storage_monitoring.html" style="width:260px"
+                                            class="drop-text">Cold
+                                            Storage Monitoring</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <!-- sumenu Drop Down -->
+                                <label for="drop-3" class="toggle toogle-3">Products <span class="angle-dropdown"
+                                        aria-hidden="true"></span>
+                                </label>
+                                <a href="#pages">Products <span class="angle-dropdown" aria-hidden="true"></span></a>
+                                <input type="checkbox" id="drop-3">
+
+                                <ul>
+                                    <li><a href="gateways.html" class="drop-text">Gateways</a></li>
+                                    <li><a href="sensors.html" class="drop-text">Sensors</a></li>
+                                    <li><a href="meters.html" class="drop-text">Meters</a></li>
+                                </ul>
+                            </li>
+                            <!--<li>
+                            &lt;!&ndash; First Tier Drop Down &ndash;&gt;
+                            <label for="drop-4" class="toggle toogle-4">Blog <span class="angle-dropdown"
+                                                                                   aria-hidden="true"></span>
+                            </label>
+                            <a href="#blog">Blog <span class="angle-dropdown" aria-hidden="true"></span></a>
+                            <input type="checkbox" id="drop-4">
+
+                            <ul>
+                                <li><a href="blog.html" class="drop-text">Blog</a></li>
+                                <li><a href="blog-single.html" class="drop-text">Blog Single</a></li>
+                            </ul>
+                        </li>-->
+                            <!--<li>
+                            &lt;!&ndash; First Tier Drop Down &ndash;&gt;
+                            <label for="drop-5" class="toggle toogle-5">Shop <span class="angle-dropdown"
+                                                                                   aria-hidden="true"></span>
+                            </label>
+                            <a href="#shop">Shop <span class="angle-dropdown" aria-hidden="true"></span></a>
+                            <input type="checkbox" id="drop-5">
+
+                            <ul>
+                                <li><a href="ecommerce.html">Ecommerce</a></li>
+                                <li><a href="ecommerce-single.html">Ecommerce Single</a></li>
+                                <li><a href="ecommerce-cart.html">Ecommerce Cart</a></li>
+                            </ul>
+                        </li>-->
+                            <li><a href="ecommerce.html">Shop</a></li>
+                            <li><a href="iot-platform-features.html">IoT Platform</a></li>
+                            <li style="padding:5px">
+                                <!-- sumenu Drop Down -->
+                                <label for="drop-7" class="toggle toogle-3">Case Study <span class="angle-dropdown"
+                                        aria-hidden="true"></span>
+                                </label>
+                                <a href="#Case Study" class="case_study">Case Study <span class="angle-dropdown"
+                                        aria-hidden="true"></span></a>
+                                <input type="checkbox" id="drop-7">
+
+                                <ul style="width:250px;margin-top:15px">
+                                    <li><a href="dg_case_study.html" style="width:300px">Diesel Generator Monitoring</a>
+                                    </li>
+                                    <li><a href="energy_case_study.html" style="width:300px" class="drop-text">Energy
+                                            Monitoring</a></li>
+                                    <!-- <li><a href="air_case_study.html" style="width:300px" class="drop-text">Air
+                                            Monitoring</a></li> -->
+                                    <li><a href="weather_case_study.html" style="width:300px" class="drop-text">Weather
+                                            Monitoring</a></li>
+                                    <li><a href="mining_case_study.html" style="width:300px" class="drop-text">Mining
+                                            Trucks
+                                            SOlution</a></li>
+                                    <li><a href="cold_storage_case_study.html" style="width:300px"
+                                            class="drop-text">Cold Storage</a></li>
+                                    <!-- <li><a href="dmc_tipper_case_study.html" style ="width:300px" class="drop-text">DMC Tipper Solutions</a>
+                                    </li> -->
+                                </ul>
+                            </li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <!--<div class="button">
+                    <a class="actionbg" title="login now" href="login.html">Login</a>
+                </div>-->
+                </div>
+            </div>
+        </header>
+    </section>
+    <!-- Headers-4 block -->
+    <div>
+        <div class="product-page">
+            <!-- <div class="product-images">
+                <div class="geeks">
+                    <img src="./productGateway/4g_gateway.png" id="mainimage">
+                </div>
+                <div class="image-gallery">
+                    <img src="./productGateway/4g_gateway.png" onclick="changeImage(this)">
+                    <img src="./productGateway/4g_gateway.png" onclick="changeImage(this)">
+                    <img src="./productGateway/4g_gateway.png" onclick="changeImage(this)">
+                    <img src="./productGateway/4g_gateway.png" onclick="changeImage(this)">
+                </div>
+            </div> -->
+            <div id="overlay">
+                <span class="close-btn" onclick="closeImage()">&times;</span>
+                <img src="./productGateway/4g_gateway.png" alt="Full-size Image" id="mainimage">
+              </div>
+            
+              <img src="./productGateway/4g_gateway.png" alt="Thumbnail Image" onclick="showImage(this.src)">
+            <div class="product-info" style="margin-left: 20px;">
+                <h1>4G/LTE Gateway</h1>
+                <p>The GSM based RMU for remote monitoring work over 4G mobile networks & WiFi. These controllers are
+                    used, not only in places without Ethernet (LAN)
+                    connectivity but where special requirements for mandatory connectivity are over
+                    mobile networks.They can communicate to a remote server using either TCP,
+                    HTTP or MQTT protocol. It accepts input data either from RS232 or an RTU RS485
+                    communication channel. It also accepts Analog & Digital inputs.</p>
+                <div class="pricing">
+                    <h5>Price:</h5>
+                    <p style="font-size:larger">₹ 4,999/-</p>
+                    <!-- <label>Arduino MKR version</label><br>
+                    <select data-show_option_none="yes">
+                        <option value="">Choose an option</option>
+                        <option value="Zero" >Zero</option>
+                        <option value="WiFi 1010" >WiFi 1010</option>
+                        <option value="WAN 1300 + 868MHz antenna" >WAN 1300 + 868MHz antenna</option>
+                        <option value="WAN 1300 + 915MHz antenna" >WAN 1300 + 915MHz antenna</option>
+                        <option value="No Arduino MKR" >No Arduino MKR</option>
+                    </select> -->
+
+                    <!-- <label>Optional</label><br>
+                    <select data-show_option_none="yes">
+                        <option value="">None</option>
+                        <option value="Zero" >Zero</option>
+                        <option value="WiFi 1010" >WiFi 1010</option>
+                        <option value="WAN 1300 + 868MHz antenna" >WAN 1300 + 868MHz antenna</option>
+                        <option value="WAN 1300 + 915MHz antenna" >WAN 1300 + 915MHz antenna</option>
+                        <option value="No Arduino MKR" >No Arduino MKR</option>
+                    </select> -->
+                    <!-- <br>
+                    <br>
+                    <h6>Quantity</h6><input type="number" value="1" min="1"> -->
+                    <!-- <button id="pricingButton">Add to Cart</button> -->
+                </div style>
+                <button id="myBtn" type="button" data-toggle="modal" data-target="#myModal">Fill a Quote
+                    Request</button>
+
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-dialog modal-sm" style="height: 500px; width: 700px;">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <!-- <span class="close">&times;</span> -->
+                                <h2>Quote Request</h2>
+                                <button type="button" class="close" data-dismiss="modal" id="closepopup">×</button>
+                                <hr>
+                            </div>
+                            <div class="modal-body">
+                                <h5>Quote Request for: 4G/LTE Gateway</h5>
+                                <!-- code removed from here and now added here for quote request -->
+                                <form action="" id="myForm">
+                                    <div id="loadingMessage" style="display:none">Sending...</div>
+                                    <div id="successMessage" style="display:none">Message sent successfully!</div>
+                                    <div class="twice-two">
+                                        <input type="text" name="w3lName" id="w3lName" placeholder="Name" required
+                                            style="border-bottom: 1px solid rgb(109, 106, 106); border-radius:5px; width:100%">
+                                        <br>
+                                        <br>
+                                        <input type="text" name="w3lCompany" id="w3lCompany" placeholder="Company"
+                                            required
+                                            style="border-bottom: 1px solid rgb(109, 106, 106); border-radius:5px; width:100%">
+                                        <br>
+                                        <br>
+                                    </div>
+                                    <div class="twice-two">
+                                        <input type="email" name="w3lSender" id="w3lSender" placeholder="Email"
+                                            required=""
+                                            style="border-bottom: 1px solid rgb(109, 106, 106); border-radius:5px; width:100%">
+                                        <br>
+                                        <br>
+                                        <input type="text" name="w3lPhone" id="w3lPhone" placeholder="Phone" required=""
+                                            style="border-bottom: 1px solid rgb(109, 106, 106); border-radius:5px; width:100%">
+                                        <br>
+                                        <br>
+                                    </div>
+                                    <textarea name="w3lMessage" id="w3lMessage" placeholder="Message" required=""
+                                        cols="30" rows="4"
+                                        style="border-bottom: 1px solid rgb(109, 106, 106); border-radius:5px; width:100%"></textarea>
+                                    <br>
+                                    <!-- <button type="submit">Send</button> -->
+                                    <div style="display: flex;
+                                    justify-content: center;
+                                    align-items: center;">
+                                        <button name="submit" class="btnAction" onclick="sendContact();"
+                                            style="border-radius: 6px; background-color: rgb(167, 167, 204);">Submit</button>
+                                    </div>
+                                </form>
+
+                            </div>
+                            <!-- <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="product-details">
+      <h2>Product Features</h2>
+      <ul>
+        <li>Feature 1</li>
+        <li>Feature 2</li>
+        <li>Feature 3</li>
+        <li>Feature 4</li>
+      </ul>
+      
+      <h2>Product Specifications</h2>
+      <table>
+        <tr>
+          <td>Specification 1</td>
+          <td>Value 1</td>
+        </tr>
+        <tr>
+          <td>Specification 2</td>
+          <td>Value 2</td>
+        </tr>
+        <tr>
+          <td>Specification 3</td>
+          <td>Value 3</td>
+        </tr>
+      </table>
+      
+      <h2>Documentation &amp; Downloads</h2>
+      <ul>
+        <li><a href="#">User Manual</a></li>
+        <li><a href="#">Datasheet</a></li>
+        <li><a href="#">Software Downloads</a></li>
+      </ul>
+      
+      <div class="pricing">
+        <h2>Pricing &amp; Ordering</h2>
+        <p>Price: $xxx.xx</p>
+        <button>Add to Cart</button>
+        <button>Buy from Distributor</button>
+      </div>
+      
+      <div class="related-products">
+        <h2>Related Products</h2>
+        <ul>
+          <li><a href="#">Product 1</a></li>
+          <li><a href="#">Product 2</a></li>
+          <li><a href="#">Product 3</a></li>
+        </ul>
+      </div>
+    </div>
+  </div> -->
+
+
+
+
+
+            <div class="container" style="margin-top: 25px;">
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul class="nav nav-tabs">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="tab" href="#description">Description</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#specifications">Specifications</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#documentation">Documentation</a>
+                            </li>
+                        </ul>
+
+                        <div class="tab-content">
+                            <div id="description" class="tab-pane fade show active">
+                                <br>
+                                <h3>Description</h3>
+                                <br>
+                                <h4>GW 5253</h4>
+                                <h4>Industrial IOT Gateway</h4>
+                                <p>The GSM based RMU for remote monitoring work over 4G mobile networks
+                                    & Wi Fi .These controllers are used, not only in places without Ethernet (LAN)
+                                    connectivity but where special requirements for mandatory connectivity are over
+                                    mobile networks.They can communicate to a remote server using either TCP,
+                                    HTTP or MQTT protocol. It accepts input data either from RS232 or an RTU RS485
+                                    communication channel. It also accepts Analog & Digital inputs</p>
+                                <h3>Features</h3>
+                                <p><strong>Plug and Play:</strong></p>
+                                <ul>
+                                    <li>Easy Integration</li>
+                                    <li>OT firmware Upgrades</li>
+                                </ul>
+                                <p><strong>Multipurpose</strong></p>
+                                <ul>
+                                    <li>Analog and Digital Sensors</li>
+                                    <li>Multiple RS 485 Commands</li>
+                                </ul>
+                                <p><strong>Secure</strong></p>
+                                <ul>
+                                    <li>Encrypted Data</li>
+                                    <li>Email and Sms Alerts</li>
+                                </ul>
+                                <!-- <p><strong>Inputs/Outputs:</strong></p>
+                                <ul>
+                                    <li>4 x power relay outputs rated for 6A at 250V</li>
+                                    <li>4 x multi-mode inputs: digital or 0÷30V or 0÷20mA analog</li>
+                                    <li>2 x digital inputs or TTL level I/Os (1-Wire, I2C, Wiegand support)</li>
+                                    <li><span class="s1">1 x 0÷10V analog output</span></li>
+                                </ul>
+                                <p><strong>Communication:</strong></p>
+                                <ul>
+                                    <li>standard RS-485 interface to the Arduino serial pins, with electrostatic
+                                        discharge protection</li>
+                                    <li>WiFi/BLE/GSM/NB-IoT/LoRa/SigFox depending on installed Arduino MKR board</li>
+                                </ul>
+                                <p><strong>Factory-installed optionals:</strong></p>
+                                <ul>
+                                    <li class="p1">real time clock (RTC) with back-up battery</li>
+                                    <li class="p1">earthquake sensor module</li>
+                                </ul>
+                                <p>&nbsp;</p>
+                                <h3>Highlights</h3>
+                                <h4>Power Supply</h4>
+                                <p>The power supply stage is a heavily protected and filtered circuit, using oversized
+                                    electrolytic capacitors, diodes and inductors, and a high efficiency, high power
+                                    voltage regulator, capable of delivering up to 2.0A at the 5V power supply input of
+                                    the Arduino MKR. This power supply stage can supply power to all current Arduino MKR
+                                    boards, including the Arduino MRK GSM 1400.</p>
+                                <p>Iono MKR accepts a wide power supply range, from 9 to 28 Vdc, and is able to
+                                    effectively handle substantial amounts of ripple, noise and supply voltage
+                                    fluctuations.</p>
+                                <h4>Inputs</h4>
+                                <p>Iono MKR has 4 analog/digital inputs and 2 digital inputs.<br />
+                                    These inputs are not directly routed to Arduino’s pins. We use a robust protection
+                                    circuit with front-end operational amplifiers to safely feed these inputs with
+                                    industry-standard 0÷10V voltage signals or 0÷20mA current loops. The same inputs can
+                                    also be used as digital inputs.</p>
+                                <p>The 2 dedicated digital inputs can be used for potential-free contacts, and are also
+                                    protected with a current-limiting network and capacitive filtering.</p>
+                                <p>These inputs can also be reconfigured as bidirectional TTL-level I/O lines, suitable
+                                    for interfacing with 1-Wire buses, Wiegand, I2C devices and other digital protocols.
+                                </p>
+                                <p>When using the digital inputs, the voltage that can be applied ranges from 0 to
+                                    40Vdc.</p>
+                                <p>The current flowing in the contacts is rated about 5mA at 24Vdc power supply, to
+                                    guarantee the cleaning of the contact itself (very low current flowing in a
+                                    mechanical contact causes oxidation problems and, in addition, reliable operation
+                                    can be affected by humidity).</p>
+                                <p>Each voltage input features a divider using a resistors network; each current input
+                                    has a low impedance input converting the input current to a voltage. In both cases,
+                                    the resulting signal is applied to an operational amplifier with unity gain; the
+                                    input of each buffer is protected against over and under voltage by a network of
+                                    resistors and Schottky barrier diodes. The output of the buffer is finally applied
+                                    to the corresponding analog input of the Arduino board through additional series
+                                    resistors that add extra protection before the Arduino board.</p>
+                                <h4>Relays</h4>
+                                <p>Iono MKR has 4 power relay outputs with normally open contacts, rated for 6A at 250V,
+                                    which can tolerate peak currents (inrush current) up to 15A.<br />
+                                    These relays have a minimum mechanical durability of 5,000,000 operations.<br />
+                                    The relays are controlled by 4 output pins of the Arduino board, so they are very
+                                    easy to control from any software development environment or application.</p>
+                                <p>The relays ensure 5kV insulation between coil and contacts (1.2/50 μs voltage wave),
+                                    protecting the Iono MKR circuitry and the Arduino board from external surge.</p>
+                                <h4>Analog Output</h4>
+                                <p>Iono MKR has one analog output with a 0÷10V industry-standard range, controlled by
+                                    the digital to analog converter output of the Arduino MKR board.</p>
+                                <p>The variable voltage level is buffered using a dedicated TSX561 operational amplifier
+                                    that offers state-of-the-art accuracy and performance and is specifically suited for
+                                    industrial signal conditioning and harsh automotive applications.<br />
+                                    The result is a clean, stable voltage output and improved reliability.</p>
+                                <h4>RS-485 Serial Port</h4>
+                                <p>Iono MKR uses the Arduino UART TX/RX pins to implement a standard RS-485 serial
+                                    port.<br />
+                                    The RS-485 port is protected from ESD and voltage surges, and supports half-duplex
+                                    communication up to to 115200 bps.</p>
+                                <p>The RS-485 TX/RX switching is controlled by a digital output pin of the Arduino
+                                    board.<br />
+                                    A 120 Ohm termination resistor between A and B can be enabled installing jumper J3.
+                                </p>
+                                <h4>Optional Features</h4>
+                                <p>Iono MKR can be shipped with an optional, factory-installed earthquake sensor module
+                                    based on the OMRON D7S vibration sensor. It is connected to the Arduino MKR via the
+                                    I2C bus. The earthquake sensor can be used to disconnect electric loads, activate
+                                    warning signs, unlock evacuation doors or perform other programmable actions when an
+                                    earthquake event is detected.</p>
+                                <p>Iono MKR can also be shipped with an optional, factory-installed hardware real time
+                                    clock with a dedicated long-life non-rechargeable back-up battery. The battery is
+                                    used to power the RTC chip when the main power is not available.</p>
+                                <p>The RTC module is based on the Microchip MCP79410 real-time clock/calendar chip. It
+                                    is connected to the Arduino MKR via the I2C bus.</p> -->
+                            </div>
+                            <div id="specifications" class="tab-pane fade">
+                                <br>
+                                <h3>Specifications</h3>
+                                <br>
+                                <!-- <table>
+                                    <tbody>
+                                        <tr>
+                                            <td>Power supply</td>
+                                            <td>12…28V⎓ nom. (11…30V⎓ )</p>
+                                                <p>Reverse polarity and surge protection up to ±500V/2ohms 1.2/50μs
+                                                    using an auto resetting fuse and diodes
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Current consumption at VS+ 12V⎓</p>
+                                                <p>unconnected inputs and relays off
+                                            </td>
+                                            <td>70mA with Arduino MKR1000 WiFi</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Current consumption at VS+ 12V⎓</p>
+                                                <p>digital inputs closed to VSO and relays on
+                                            </td>
+                                            <td>165mA with Arduino MKR1000 WiFi</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Current consumption at VS+ 24V⎓</p>
+                                                <p>unconnected inputs and relays off
+                                            </td>
+                                            <td>40mA with Arduino MKR1000 WiFi</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Current consumption at VS+ 24V⎓</p>
+                                                <p>digital inputs closed to VSO and relays on
+                                            </td>
+                                            <td>115mA with Arduino MKR1000 WiFi</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Arduino platform compatibility</td>
+                                            <td>Arduino MKR WiFi 1010, Arduino MKR1000 WiFi (with headers), Arduino MKR
+                                                ZERO, Arduino MKR GSM 1400, Arduino MKR FOX 1200, Arduino MKR WAN 1300
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Inputs</td>
+                                            <td>4 multi-mode (digital or analog 0…30V or 0…25mA)</p>
+                                                <p>2 digital (also configurable as TTL I/O)
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Voltage range at digital inputs (1-4)</td>
+                                            <td>0…40V⎓</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Current for each digital input (1-4)</td>
+                                            <td>2.9mA at VS+ 12V⎓</p>
+                                                <p>5.8mA at VS+ 24V⎓
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Voltage threshold digital inputs 1-4 (typ.)</td>
+                                            <td>VIH: 4.6V</p>
+                                                <p>VIL: 3.8V
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Voltage range at digital inputs (5-6)</td>
+                                            <td>0…40V⎓ in normal mode</p>
+                                                <p>0…5V⎓ in TTL mode
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Current for each digital input (5-6)</td>
+                                            <td>1.8mA at VS+ 12V⎓</p>
+                                                <p>3.5mA at VS+ 24V⎓
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Voltage threshold digital inputs 5-6 (typ.)</td>
+                                            <td>VIH: 4.7V</p>
+                                                <p>VIL: 3.9V
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Impedance for analog 0…10V inputs (1¸4)</td>
+                                            <td>410kΩ</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Impedance for analog 0…20mA inputs (1-4)</td>
+                                            <td>130Ω</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Analog inputs characteristics</td>
+                                            <td>Resolution: 12 bits</p>
+                                                <p>Linearity: ±1LSB</p>
+                                                <p>MAX error: ±2% of full scale
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Max cable length for digital inputs (1-6)</td>
+                                            <td>30 meters</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Max cable length for analog inputs (1-4)</td>
+                                            <td>15 meters</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Digital outputs</td>
+                                            <td>4 power relays with single coil</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Relay outputs rating</td>
+                                            <td>
+                                                <ul>
+                                                    <li>Rated current: 6 A</li>
+                                                    <li>Rated voltage: 250 V AC</li>
+                                                    <li>Rated load (AC1, resistive load): 1500 VA</li>
+                                                    <li>Rated load (AC15, cos φ = 0.5): 250 VA</li>
+                                                    <li>Single phase motor rating (230 V AC): 185 W</li>
+                                                    <li>Breaking capacity (DC1):
+                                                        <ul>
+                                                            <li>3 A at 30 V DC</li>
+                                                            <li>0.35 A at 110 V DC</li>
+                                                            <li>0.2 A at 220 V DC</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>Electrical life at rated load AC1: 50000 cycles</li>
+                                                    <li>Mechanical life: 20000000 cycles</li>
+                                                    <li>Operate/release time: 6/4 ms</li>
+                                                    <li>Dielectric strength between open contacts: 1000 V AC</li>
+                                                    <li>Type of insulation between coil and contacts: Basic</li>
+                                                    <li>Dielectric strength between coil and contacts: 4000 V AC</li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Analog output (AO1) voltage output error</td>
+                                            <td>2% of full scale</td>
+                                        </tr>
+                                        <tr>
+                                            <td>AUX VSO</td>
+                                            <td>Max allowable current: 300mA</p>
+                                                <p>Min voltage: (Supply voltage) &#8211; 1V
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>AUX 5VO</td>
+                                            <td>Max allowable current: 50mA</p>
+                                                <p>Min voltage: 4.5V
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Communication ports</td>
+                                            <td>RS-485 half-duplex with data direction management controlled by Arduino
+                                                MKR pin 4</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Baud Rates on COMM ports</td>
+                                            <td>1200 to 115200</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ESD-Protection Voltage on RS-485 A/B</td>
+                                            <td>±15kV human body model</p>
+                                                <p>±8kV contact discharge
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Surge protection on RS-485 A/B</td>
+                                            <td>Surge protection up to ±500V/2ohms 1.2/50μs; 600W peak pulse power
+                                                capability at 10/1000μs waveform</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Fail safe feature on RS-485</td>
+                                            <td>Optional with jumpers (not installed)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>12-pin terminal block characteristics</td>
+                                            <td>Maximum conductor cross section: 1.5 mm2 (16 AWG), or 0.5 mm2 when using
+                                                ferrules (highly recommended)<br />
+                                                Recommended stripping length: 5 mmScrew thread: M2<br />
+                                                Maximum screws tightening torque: 0.25 Nm</td>
+                                        </tr>
+                                        <tr>
+                                            <td>8-pin terminal block characteristics</td>
+                                            <td>Maximum conductor cross section: 2.5 mm2 (12 AWG)<br />
+                                                Recommended stripping length: 7 mm<br />
+                                                Screw thread: M3Maximum screws tightening torque: 0.6 Nm</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Housing</td>
+                                            <td>standard 3M for DIN rail</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Operating temperature</td>
+                                            <td>0…+50 °C</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Storage temperature</td>
+                                            <td>-20…+70 °C</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Relative humidity</td>
+                                            <td>5% to 90% noncondensing</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Protection degree</td>
+                                            <td>IP20</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Weight</td>
+                                            <td>128 g (Iono MKR)</p>
+                                                <p>160 g (Iono MKR with Arduino MKR1010 WiFi)
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table> -->
+                                <table style="width:100%">
+                                    <th colspan="2" style="text-align: center;">GSM Band</th>
+                                    <tr>
+                                        <td>
+                                            4G
+                                        </td>
+                                        <td>
+                                            LTE-TDD: B38/B39/B40/B41 <br>
+                                            LTE-FDD: B1/B3/B8
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            3G
+                                        </td>
+                                        <td>
+                                            UMTS/HSDPA/HSPA+: B1/B8
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            GNSS
+                                        </td>
+                                        <td>
+                                            GPS/Beidou/GLONASS
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            2G
+                                        </td>
+                                        <td>
+                                            GSM/GPRS/EDGE: 900/1800MHz
+                                        </td>
+                                    </tr>
+                                </table>
+                                <br>
+                                <br>
+                                <br>
+                                <table style="width:100%">
+                                    <th colspan="2" style="text-align: center;">Data Rate</th>
+                                    <tr>
+                                        <td>
+                                            4G (LTE Cat-4)
+                                        </td>
+                                        <td>
+                                            150Mbps(DL) / 50Mbps(UL)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            3G (HSPA+)
+                                        </td>
+                                        <td>
+                                            42Mbps(DL) / 5.76Mbps(UL)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            2g (EDGE)
+                                        </td>
+                                        <td>
+                                            236.8Kbps(DL) / 236.8Kbps(UL)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            2G (GPRS)
+                                        </td>
+                                        <td>
+                                            85.6Kbps(DL) / 85.6Kbps(UL)
+                                        </td>
+                                    </tr>
+                                </table>
+                                <br>
+                                <br>
+                                <br>
+                                <table style="width:100%">
+                                    <th colspan="2" style="text-align: center;">Software Specifications</th>
+                                    <tr>
+                                        <td>
+                                            Communication
+                                        </td>
+                                        <td>
+                                            TCP/UDP/Modbus/HTTP(S)/MQTT
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Modbus Mode
+                                        </td>
+                                        <td>
+                                            Auto Modbus collection, supports up to 32 commands,user-defined command
+                                            period and interval
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            HTTP(S) Mode
+                                        </td>
+                                        <td>
+                                            Supports HTTP/HTTPS POST (json format) configurable server address and port
+
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            MQTT Mode
+                                        </td>
+                                        <td>
+                                            Supports Multi topics subscription and publish
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            SMS
+                                        </td>
+                                        <td>
+                                            Sms based device status updates
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Configuration Settings
+                                        </td>
+                                        <td>
+                                            Configuration Settings using HOST Pc
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            FOTA
+                                        </td>
+                                        <td>
+                                            Firmware upgrade over the air
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Security
+                                        </td>
+                                        <td>
+                                            TLS based Encryption
+                                        </td>
+                                    </tr>
+                                </table>
+                                <br>
+                                <br>
+                                <br>
+                                <table style="width:100%">
+                                    <th colspan="2" style="text-align: center;">Hardware Specifications</th>
+                                    <tr>
+                                        <td>
+                                            Powert Supply
+                                        </td>
+                                        <td>
+                                            Wide Input Range 9-32 VDC,Reverse Polarity Protection
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Serial Ports
+                                        </td>
+                                        <td>
+                                            RS232:connector: DB9 female protection: TVS protection, anti-surge, ESD
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Modbus
+                                        </td>
+                                        <td>
+                                            RS485: connector: screw terminals (A, B) protection: anti-surge, 5KV ESD
+                                            protection
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Serial Port baudrate
+                                        </td>
+                                        <td>
+                                            Supports 300bps ~ 921600bps, 115200bps by default
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            SIM Slot
+                                        </td>
+                                        <td>
+                                            Mini Sim Connector
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Indicator
+                                        </td>
+                                        <td>
+                                            Power,RS485 communication & Network
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Antenna
+                                        </td>
+                                        <td>
+                                            LTE, GNSS
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Display
+                                        </td>
+                                        <td>
+                                            16 x 2 character LCD
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Enclosure
+                                        </td>
+                                        <td>
+                                            200 x 120 x 75 mm, IP 65 type
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            CPU
+                                        </td>
+                                        <td>
+                                            Powerful ESP 32 Core
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Operating temperature
+                                        </td>
+                                        <td>
+                                            -20℃~80℃
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            WiFi
+                                        </td>
+                                        <td>
+                                            TCP/IP, full 802.11 b/g/n/e/i WLAN MAC protocol
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            LoRA
+                                        </td>
+                                        <td>
+                                            433Mhz ISM Band, Point to Point with Star Topology
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            SD Card
+                                        </td>
+                                        <td>
+                                            Micro SD Card for Data Logging
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Analog Inputs
+                                        </td>
+                                        <td>
+                                            2 Channel 4-20mA or 0-10V
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Digital Inputs
+                                        </td>
+                                        <td>
+                                            230VAC Digital Inputs
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Outputs
+                                        </td>
+                                        <td>
+                                            2 Channel Relay Output up to 8Amp Load
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Sensors
+                                        </td>
+                                        <td>
+                                            DHT 22 Temperature & Humidity Sensor input
+                                        </td>
+                                    </tr>
+                                </table>
+
+                            </div>
+                            <div id="documentation" class="tab-pane fade">
+                                <h3>Documentation</h3>
+                                <div>
+                                    <div style="margin-bottom: 50px;">
+                                        <div>
+                                        </div>
+                                        <div>
+
+
+
+                                            <div class="docs-container">
+                                                <div class="docs-section">
+                                                    <div>
+                                                        <a target="_blank"
+                                                            href="assests/pdfs/3D View.pdf">
+                                                            <i class="fa-file-pdf far" style="margin-right: 10px;"></i>
+                                                            LTE Gateway 3D View </a>
+                                                    </div>
+                                                    <div>
+                                                        <a target="_blank"
+                                                            href="assests/pdfs/Catalog.pdf">
+                                                            <i class="fa-file-pdf far" style="margin-right: 10px;"></i>
+                                                            LTE Gateway Catalog </a>
+                                                    </div>
+                                                    <div>
+                                                        <a target="_blank"
+                                                            href="assests/pdfs/Schematic.pdf">
+                                                            <i class="fa-file-pdf far" style="margin-right: 10px;"></i>
+                                                            LTE Gateway Schematic Diagram </a>
+                                                    </div>
+                                                </div>
+
+                                                
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <script>
+                let thumbnails = document.querySelectorAll('.image-gallery img');
+                let mainImage = document.querySelector('.product-images img');
+                thumbnails.forEach(thumbnail => {
+                    thumbnail.addEventListener('click', () => {
+                        let newImageSrc = thumbnail.getAttribute('src');
+                        mainImage.setAttribute('src', newImageSrc);
+                    });
+                });
+
+                var modal = document.getElementById("myModal");
+
+                // Get the button that opens the modal
+                var btn = document.getElementById("myBtn");
+
+                // Get the <span> element that closes the modal
+                var span = document.getElementsByClassName("close")[0];
+
+                // When the user clicks the button, open the modal 
+                btn.onclick = function () {
+                    modal.style.display = "block";
+                }
+
+                // When the user clicks on <span> (x), close the modal
+                span.onclick = function () {
+                    modal.style.display = "none";
+                }
+
+                // When the user clicks anywhere outside of the modal, close it
+                window.onclick = function (event) {
+                    if (event.target == modal) {
+                        modal.style.display = "none";
+                    }
+                }
+
+
+
+
+
+                // Get all tab buttons and tab content
+                const tabButtons = document.querySelectorAll(".tab button");
+                const tabContent = document.querySelectorAll(".tabcontent");
+
+                // Add event listener to each tab button
+                tabButtons.forEach((button, i) => {
+                    button.addEventListener("click", () => {
+                        // Hide all tab content and remove active class from all tab buttons
+                        tabContent.forEach((content) => {
+                            content.style.display = "none";
+                        });
+                        tabButtons.forEach((button) => {
+                            button.classList.remove("active");
+                        });
+
+                        // Show the selected tab content and add active class to the selected tab button
+                        tabContent[i].style.display = "block";
+                        button.classList.add("active");
+                    });
+                });
+
+                function changeImage(thumbnailImage) {
+                    var mainImage = document.getElementById("mainimage");
+                    mainImage.src = thumbnailImage.src;
+                }
+
+                $(document).ready(function () {
+                    $('#mainimage').zoom({
+                        magnify: 2 // Change the zoom level as required
+                    });
+                });
+
+
+
+
+
+
+                function sendContact() {
+                    event.preventDefault();
+                    document.getElementById("loadingMessage").style.display = "block";
+                    jQuery.ajax({
+                        url: "https://qjtechnologies.com/mail/contact_iothingss.php",
+                        data: {
+                            w3lName: $("#w3lName").val(),
+                            w3lCompany: $("#w3lCompany").val(),
+                            w3lSender: $("#w3lSender").val(),
+                            w3lPhone: $("#w3lPhone").val(),
+                            w3lMessage: $("#w3lMessage").val()
+                        },
+                        type: "POST",
+                        success: function (data) {
+                            $("#mail-status").html(data);
+                            console.log("Success");
+                            document.getElementById("loadingMessage").style.display = "none";
+                            document.getElementById("successMessage").style.display = "block";
+                            document.getElementById("successMessage").style.backgroundColor = "#12CC1A";
+                            document.getElementById("successMessage").style.textAlign = "center";
+                            document.getElementById("successMessage").style.margin = "7px";
+                            document.getElementById("successMessage").style.fontSize = "larger";
+                            document.getElementById("successMessage").style.padding = "6px";
+                            document.getElementById("myForm").reset();
+                        },
+                        error: function () { }
+                    });
+                }
+
+
+                function showImage(src) {
+                    var overlay = document.getElementById('overlay');
+                    var image = overlay.getElementsByTagName('img')[0];
+      
+                    if (image.src !== src) {
+                        image.src = src;
+                        image.classList.remove('enlarged');
+                        overlay.classList.remove('enlarged');
+                      } else {
+                        image.classList.toggle('enlarged');
+                        overlay.classList.toggle('enlarged');
+                      }
+      
+                    overlay.style.display = 'block';
+                }
+
+                function closeImage() {
+                    var overlay = document.getElementById('overlay');
+                    overlay.style.display = 'none';
+                  }
+            </script>
+</body>
+
+</html>
