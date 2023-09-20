@@ -74,25 +74,25 @@
             width: 100%;
             height: 100%;
             background-color: rgba(0, 0, 0, 0.7);
-          }
+        }
 
-          #overlay.enlarged {
+        #overlay.enlarged {
             background-color: rgba(0, 0, 0, 0.85);
-          }
-          
-          #overlay img {
+        }
+
+        #overlay img {
             display: block;
             max-width: 80%;
             max-height: 80%;
             margin: auto;
             margin-top: 10%;
-          }
+        }
 
-          #overlay img.enlarged {
+        #overlay img.enlarged {
             transform: scale(1.5);
-          }
+        }
 
-          .close-btn {
+        .close-btn {
             color: red;
             position: absolute;
             top: 10px;
@@ -100,7 +100,7 @@
             font-size: 52px;
             color: #fff;
             cursor: pointer;
-          }
+        }
     </style>
     <!-- <header class="d-flex align-items-center">
         <div class="logo mr-auto">
@@ -294,11 +294,12 @@
             <div id="overlay">
                 <span class="close-btn" onclick="closeImage()">&times;</span>
                 <img src="./productGateway/4g_gateway.png" alt="Full-size Image" id="mainimage">
-              </div>
-            
-              <img src="./productGateway/4g_gateway.png" alt="Thumbnail Image" onclick="showImage(this.src)">
+            </div>
+
+            <img src="./productGateway/4g_gateway.png" alt="Thumbnail Image" onclick="showImage(this.src)">
             <div class="product-info" style="margin-left: 20px;">
-                <h1>4G/LTE Gateway</h1>
+                <h1>Wireless Outdoor Temperature &Humidity Sensor
+                </h1>
                 <p>The GSM based RMU for remote monitoring work over 4G mobile networks & WiFi. These controllers are
                     used, not only in places without Ethernet (LAN)
                     connectivity but where special requirements for mandatory connectivity are over
@@ -1109,167 +1110,164 @@
                                             <div class="docs-container">
                                                 <div class="docs-section">
                                                     <div>
-                                                        <a target="_blank"
-                                                            href="assests/pdfs/3D View.pdf">
+                                                        <a target="_blank" href="assests/pdfs/3D View.pdf">
                                                             <i class="fa-file-pdf far" style="margin-right: 10px;"></i>
                                                             LTE Gateway 3D View </a>
                                                     </div>
                                                     <div>
-                                                        <a target="_blank"
-                                                            href="assests/pdfs/Catalog.pdf">
+                                                        <a target="_blank" href="assests/pdfs/Catalog.pdf">
                                                             <i class="fa-file-pdf far" style="margin-right: 10px;"></i>
                                                             LTE Gateway Catalog </a>
                                                     </div>
                                                     <div>
-                                                        <a target="_blank"
-                                                            href="assests/pdfs/Schematic.pdf">
+                                                        <a target="_blank" href="assests/pdfs/Schematic.pdf">
                                                             <i class="fa-file-pdf far" style="margin-right: 10px;"></i>
                                                             LTE Gateway Schematic Diagram </a>
                                                     </div>
                                                 </div>
 
-                                                
 
+
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
 
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
 
 
 
-            <script>
-                let thumbnails = document.querySelectorAll('.image-gallery img');
-                let mainImage = document.querySelector('.product-images img');
-                thumbnails.forEach(thumbnail => {
-                    thumbnail.addEventListener('click', () => {
-                        let newImageSrc = thumbnail.getAttribute('src');
-                        mainImage.setAttribute('src', newImageSrc);
+                <script>
+                    let thumbnails = document.querySelectorAll('.image-gallery img');
+                    let mainImage = document.querySelector('.product-images img');
+                    thumbnails.forEach(thumbnail => {
+                        thumbnail.addEventListener('click', () => {
+                            let newImageSrc = thumbnail.getAttribute('src');
+                            mainImage.setAttribute('src', newImageSrc);
+                        });
                     });
-                });
 
-                var modal = document.getElementById("myModal");
+                    var modal = document.getElementById("myModal");
 
-                // Get the button that opens the modal
-                var btn = document.getElementById("myBtn");
+                    // Get the button that opens the modal
+                    var btn = document.getElementById("myBtn");
 
-                // Get the <span> element that closes the modal
-                var span = document.getElementsByClassName("close")[0];
+                    // Get the <span> element that closes the modal
+                    var span = document.getElementsByClassName("close")[0];
 
-                // When the user clicks the button, open the modal 
-                btn.onclick = function () {
-                    modal.style.display = "block";
-                }
+                    // When the user clicks the button, open the modal 
+                    btn.onclick = function () {
+                        modal.style.display = "block";
+                    }
 
-                // When the user clicks on <span> (x), close the modal
-                span.onclick = function () {
-                    modal.style.display = "none";
-                }
-
-                // When the user clicks anywhere outside of the modal, close it
-                window.onclick = function (event) {
-                    if (event.target == modal) {
+                    // When the user clicks on <span> (x), close the modal
+                    span.onclick = function () {
                         modal.style.display = "none";
                     }
-                }
+
+                    // When the user clicks anywhere outside of the modal, close it
+                    window.onclick = function (event) {
+                        if (event.target == modal) {
+                            modal.style.display = "none";
+                        }
+                    }
 
 
 
 
 
-                // Get all tab buttons and tab content
-                const tabButtons = document.querySelectorAll(".tab button");
-                const tabContent = document.querySelectorAll(".tabcontent");
+                    // Get all tab buttons and tab content
+                    const tabButtons = document.querySelectorAll(".tab button");
+                    const tabContent = document.querySelectorAll(".tabcontent");
 
-                // Add event listener to each tab button
-                tabButtons.forEach((button, i) => {
-                    button.addEventListener("click", () => {
-                        // Hide all tab content and remove active class from all tab buttons
-                        tabContent.forEach((content) => {
-                            content.style.display = "none";
+                    // Add event listener to each tab button
+                    tabButtons.forEach((button, i) => {
+                        button.addEventListener("click", () => {
+                            // Hide all tab content and remove active class from all tab buttons
+                            tabContent.forEach((content) => {
+                                content.style.display = "none";
+                            });
+                            tabButtons.forEach((button) => {
+                                button.classList.remove("active");
+                            });
+
+                            // Show the selected tab content and add active class to the selected tab button
+                            tabContent[i].style.display = "block";
+                            button.classList.add("active");
                         });
-                        tabButtons.forEach((button) => {
-                            button.classList.remove("active");
+                    });
+
+                    function changeImage(thumbnailImage) {
+                        var mainImage = document.getElementById("mainimage");
+                        mainImage.src = thumbnailImage.src;
+                    }
+
+                    $(document).ready(function () {
+                        $('#mainimage').zoom({
+                            magnify: 2 // Change the zoom level as required
                         });
-
-                        // Show the selected tab content and add active class to the selected tab button
-                        tabContent[i].style.display = "block";
-                        button.classList.add("active");
                     });
-                });
-
-                function changeImage(thumbnailImage) {
-                    var mainImage = document.getElementById("mainimage");
-                    mainImage.src = thumbnailImage.src;
-                }
-
-                $(document).ready(function () {
-                    $('#mainimage').zoom({
-                        magnify: 2 // Change the zoom level as required
-                    });
-                });
 
 
 
 
 
 
-                function sendContact() {
-                    event.preventDefault();
-                    document.getElementById("loadingMessage").style.display = "block";
-                    jQuery.ajax({
-                        url: "https://qjtechnologies.com/mail/contact_iothingss.php",
-                        data: {
-                            w3lName: $("#w3lName").val(),
-                            w3lCompany: $("#w3lCompany").val(),
-                            w3lSender: $("#w3lSender").val(),
-                            w3lPhone: $("#w3lPhone").val(),
-                            w3lMessage: $("#w3lMessage").val()
-                        },
-                        type: "POST",
-                        success: function (data) {
-                            $("#mail-status").html(data);
-                            console.log("Success");
-                            document.getElementById("loadingMessage").style.display = "none";
-                            document.getElementById("successMessage").style.display = "block";
-                            document.getElementById("successMessage").style.backgroundColor = "#12CC1A";
-                            document.getElementById("successMessage").style.textAlign = "center";
-                            document.getElementById("successMessage").style.margin = "7px";
-                            document.getElementById("successMessage").style.fontSize = "larger";
-                            document.getElementById("successMessage").style.padding = "6px";
-                            document.getElementById("myForm").reset();
-                        },
-                        error: function () { }
-                    });
-                }
+                    function sendContact() {
+                        event.preventDefault();
+                        document.getElementById("loadingMessage").style.display = "block";
+                        jQuery.ajax({
+                            url: "https://qjtechnologies.com/mail/contact_iothingss.php",
+                            data: {
+                                w3lName: $("#w3lName").val(),
+                                w3lCompany: $("#w3lCompany").val(),
+                                w3lSender: $("#w3lSender").val(),
+                                w3lPhone: $("#w3lPhone").val(),
+                                w3lMessage: $("#w3lMessage").val()
+                            },
+                            type: "POST",
+                            success: function (data) {
+                                $("#mail-status").html(data);
+                                console.log("Success");
+                                document.getElementById("loadingMessage").style.display = "none";
+                                document.getElementById("successMessage").style.display = "block";
+                                document.getElementById("successMessage").style.backgroundColor = "#12CC1A";
+                                document.getElementById("successMessage").style.textAlign = "center";
+                                document.getElementById("successMessage").style.margin = "7px";
+                                document.getElementById("successMessage").style.fontSize = "larger";
+                                document.getElementById("successMessage").style.padding = "6px";
+                                document.getElementById("myForm").reset();
+                            },
+                            error: function () { }
+                        });
+                    }
 
 
-                function showImage(src) {
-                    var overlay = document.getElementById('overlay');
-                    var image = overlay.getElementsByTagName('img')[0];
-      
-                    if (image.src !== src) {
-                        image.src = src;
-                        image.classList.remove('enlarged');
-                        overlay.classList.remove('enlarged');
-                      } else {
-                        image.classList.toggle('enlarged');
-                        overlay.classList.toggle('enlarged');
-                      }
-      
-                    overlay.style.display = 'block';
-                }
+                    function showImage(src) {
+                        var overlay = document.getElementById('overlay');
+                        var image = overlay.getElementsByTagName('img')[0];
 
-                function closeImage() {
-                    var overlay = document.getElementById('overlay');
-                    overlay.style.display = 'none';
-                  }
-            </script>
+                        if (image.src !== src) {
+                            image.src = src;
+                            image.classList.remove('enlarged');
+                            overlay.classList.remove('enlarged');
+                        } else {
+                            image.classList.toggle('enlarged');
+                            overlay.classList.toggle('enlarged');
+                        }
+
+                        overlay.style.display = 'block';
+                    }
+
+                    function closeImage() {
+                        var overlay = document.getElementById('overlay');
+                        overlay.style.display = 'none';
+                    }
+                </script>
 </body>
 
 </html>
